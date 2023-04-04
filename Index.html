@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cálculo del último cheque en la República Dominicana</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <h1>Cálculo del último cheque en la República Dominicana</h1>
+  <form>
+    <div style="display: flex;">
+      <label for="startDate">Fecha de entrada:</label>
+      <input type="date" id="startDate" name="startDate" required>
+    
+      <label for="endDate">Fecha de salida:</label>
+      <input type="date" id="endDate" name="endDate" required>
+    </div>
+
+
+    <div style="display: flex;">
+      <label for="periodo">Periodo:</label>
+      <label for="quincenal">Quincenal:</label>
+      <input type="radio" id="quincenal" name="periodo" value="true"><br>
+      
+      <label for="mensual">Mensual:</label>
+      <input type="radio" id="mensual" name="periodo" value="true"><br>  
+    </div>
+
+    <div style="display: flex;">
+      <label for="salary">Salario:</label>
+      <input type="number" id="salary" name="salary"><br>
+    </div>
+
+    <div style="display: flex; margin-right: 10px;">
+      <label for="preAviso">Pre-Aviso:</label>
+      <input type="checkbox" id="preAviso" name="preAviso" value="true"><br>  
+    </div>
+
+    <button type="submit" id="calculateButton">Calcular último cheque</button>
+  </form>
+
+  <div id="preAvisoResult"></div>
+  <div id="cesantiaResult"></div>
+  <div id="vacacionesResult"></div>
+  <div id="navidadResult"></div>
+  <div id="result"></div>
+  
+
+  <script src="Main.js"></script>
+</body>
+</html>
